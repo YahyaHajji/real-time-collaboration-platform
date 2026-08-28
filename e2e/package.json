@@ -1,0 +1,14 @@
+{
+  "name": "real-time-collaboration-e2e",
+  "version": "0.0.1",
+  "private": true,
+  "packageManager": "npm@11.16.0",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.62.0",
+    "typescript": "~6.0.2"
+  }
+}

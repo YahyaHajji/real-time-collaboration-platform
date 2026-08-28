@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:18.4-alpine
+    container_name: collaboration-postgres
+    environment:
+      POSTGRES_DB: collaboration
+      POSTGRES_USER: collaboration_app
+      POSTGRES_PASSWORD: collaboration_dev
+    ports:
+      - "5434:5432"
+    volumes:
+      - collaboration-data:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U collaboration_app -d collaboration"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+volumes:
+  collaboration-data:
+

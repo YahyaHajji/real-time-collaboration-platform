@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Relay collaboration mark</title>
+  <desc id="desc">Three connected arcs surrounding a central spark.</desc>
+  <path d="M15.5 21.5C20.7 10.3 35.2 6.8 45 14.2" fill="none" stroke="#7C6CFF" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="48.5" cy="18.5" r="4.5" fill="#7C6CFF"/>
+  <path d="M51.7 27.3C55.7 39.7 47.8 52.3 35.4 54" fill="none" stroke="#22D3EE" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="30.5" cy="53" r="4.5" fill="#22D3EE"/>
+  <path d="M22.8 51C11.2 46.8 6.8 32.8 13.3 22.3" fill="none" stroke="#34D399" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="16.5" cy="18.5" r="4.5" fill="#34D399"/>
+  <path d="M32 24.5l2.6 5 5.4 2.6-5.4 2.6-2.6 5-2.6-5-5.4-2.6 5.4-2.6 2.6-5z" fill="#F8FAFC"/>
+</svg>

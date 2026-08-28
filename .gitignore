@@ -1,0 +1,16 @@
+.idea/
+.vscode/
+backend/target/
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+e2e/node_modules/
+e2e/test-results/
+e2e/playwright-report/
+.env
+*.log
+.run/
+
+# Internal planning and design handoff artifacts
+PROJECT_MAP.md
+docs/ux/

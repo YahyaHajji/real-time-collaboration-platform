@@ -1,0 +1,50 @@
+spring:
+  application:
+    name: real-time-collaboration-api
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5434/collaboration}
+    username: ${DB_USERNAME:collaboration_app}
+    password: ${DB_PASSWORD:collaboration_dev}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+  flyway:
+    enabled: true
+
+server:
+  port: ${SERVER_PORT:8081}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: never
+
+app:
+  cors:
+    allowed-origin: ${CORS_ALLOWED_ORIGIN:http://localhost:4201}
+  security:
+    jwt:
+      issuer: ${JWT_ISSUER:real-time-collaboration-api}
+      audience: ${JWT_AUDIENCE:real-time-collaboration-web}
+      access-token-minutes: 30
+      public-key: ${JWT_PUBLIC_KEY:}
+      private-key: ${JWT_PRIVATE_KEY:}
+      require-configured-keys: ${JWT_REQUIRE_CONFIGURED_KEYS:true}
+  demo-data:
+    enabled: ${DEMO_DATA_ENABLED:false}
+  realtime:
+    allowed-origin: ${CORS_ALLOWED_ORIGIN:http://localhost:4201}
+
+logging:
+  level:
+    root: INFO
+    com.example.collaboration: INFO
